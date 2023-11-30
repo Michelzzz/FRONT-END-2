@@ -43,28 +43,13 @@ fetch('https://app-uniesp-p2-43622fe4ead4.herokuapp.com/mensagens')
   sendMessage();
  });
  
- function sendMessage() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-  
-  fetch('https://app-uniesp-p2-43622fe4ead4.herokuapp.com/mensagens', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ name: name, email: email, message: message })
-  })
-  .then(response => response.json())
-  .then(data => {
-  if (data.success) {
-    document.getElementById('messageResponse').textContent = 'Mensagem enviada com sucesso.';
-  } else {
-    document.getElementById('messageResponse').textContent = 'Erro ao enviar a mensagem.';
-  }
-  })
-  .catch(error => {
-  document.getElementById('messageResponse').textContent = 'Erro ao enviar a mensagem: ' + error;
+ function inserirMensagem(obj) {
+  var inserir = $.ajax({
+      url: 'https://app-uniesp-p2-43622fe4ead4.herokuapp.com/mensagens',
+      method: 'POST',
+      data: JSON.stringify(obj),
+      dataType: 'json',
+      async: false,
+      contentType: 'application/json',
   });
- }
- 
+}
