@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slyle2.css">
-    <title>AreaAdministrativa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADM</title>
 </head>
 <header>
-    <nav class="navbar">
-       <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Contato</a></li>
-            <li><a href="">Area Admin</a></li>
-       </ul>
-    </nav>
-   </header>
+  <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Área Admin</a></li>
+        </ul>
+  </nav>
+</header>
+
 <body>
-    <div class="title"> 
-        <h1>Area Administrativa</h1>
-    </div>
-    <section>
-        <div class="login-container">
-            <form action="">
-                <label for="E-mail">E-mail:</label>
-                <Input type="email"></Input>
-                <label for="Senha">Senha:</label>                
-                <Input type="password"></Input>
-                <button type="submit">Enter</button>
-            </form>
-        </div>
-    </section>
+  <table id="myTable">
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Mensagem</th>
+    </tr>
+   </table>
+
+   <style>
+    nav {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 65px;
+      background: var(--azul-escuro);
+      width: 100vw;
+     top: 0;
+     left: 0;
+  }
+  
+  
+  nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      list-style: none;
+  
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      white-space: nowrap;
+      list-style: none;
+  
+  }
+  
+  
+  nav ul li a:hover {
+      color: var(--cor3);
+      transition: 0.5s;
+  }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+     }
+     
+     th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+     }
+     th {
+      background-color: #4CAF50;
+      color: white;
+     }
+     
+     tr:nth-child(even) {
+      background-color: #f2f2f2;
+     }
+     th {
+      text-align: left;
+     }
+     a {
+      color: #0066cc;
+      text-decoration: none;
+     }
+     
+     a:hover {
+      text-decoration: underline;
+     }
+
+   </style>
+   <script src="script.js"></script>
 </body>
 </html>

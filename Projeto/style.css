@@ -1,52 +1,59 @@
-*{  padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 }
-.navbar{
+
+nav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65px;
+    background: var(--azul-escuro);
     width: 100vw;
-    height: 60px;
-    background-color: darkgrey;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    
+   top: 0;
+   left: 0;
 }
-.navbar a{
-    margin: 10px;
-    justify-content: center;
-    
-}
-.navbar ul{
+
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
     list-style: none;
-    width: 100vw;
-    margin: auto;
 
 }
-section {
-    width: 100vw;
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    list-style: none;
+
+}
+
+
+nav ul li a:hover {
+    color: var(--cor3);
+    transition: 0.5s;
+}
+
+.intro{
     text-align: center;
+    padding: 5%;
+}
+
+.textos{
+    justify-content: space-between;
+    width: 100vw;
     display: flex;
+}
 
-}
-.TextoEsquerda {
+.texto1, .texto2{
     width: 45%;
-    height: 50px;
-    margin: auto;
-    margin-left: 45px;
-}
-.TextoDireita {
-    width: 45%;
-    height: 50px;
-    margin: auto;
-    margin-right: 45px;
-
-}
-.title {
-    width: 100vw;
-    text-align: center;
-    padding: 50px;
-    
+    padding: 2%;
 }
