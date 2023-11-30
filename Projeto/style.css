@@ -1,0 +1,52 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100vw;
+    height: 60px;
+    background-color: darkgrey;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+}
+.navbar a{
+    margin: 10px;
+    justify-content: center;
+    
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100vw;
+    margin: auto;
+
+}
+section {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+
+}
+.TextoEsquerda {
+    width: 45%;
+    height: 50px;
+    margin: auto;
+    margin-left: 45px;
+}
+.TextoDireita {
+    width: 45%;
+    height: 50px;
+    margin: auto;
+    margin-right: 45px;
+
+}
+.title {
+    width: 100vw;
+    text-align: center;
+    padding: 50px;
+    
+}
